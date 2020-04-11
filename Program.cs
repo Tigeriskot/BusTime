@@ -240,6 +240,7 @@ namespace BusTime
             CountOfPeople -= countDropPeople;
             Console.WriteLine("Из автобуса вышло: " + countDropPeople);
         }
+
         // перегрузка метода DropPeople(BusStop busStop), метод используется для выгрузки пассажиров на конечной остановке
         private void DropPeople()
         {
