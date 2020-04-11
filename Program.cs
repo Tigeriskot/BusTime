@@ -142,7 +142,7 @@ namespace BusTime
         public List<People> Peoples;
         // маршрут автобуса
         public Maps Maps;
-        // переменная, которая хранит bool переменную, о том в каком направление едет автобус
+        // переменная, которая хранит bool значение, о том в каком направление едет автобус
         public bool Way;
         // конструктор класса автобус, который принимает единственный параметр маршрутный лист
         public Bus(Maps maps) 
@@ -150,6 +150,7 @@ namespace BusTime
             Peoples = new List<People>();
             Maps = maps; 
         }
+        // метод имитации одного полного рейса автобуса
         public void Route()
         {   // номера остановок на маршруте
             int countBusStop = 1;
@@ -297,11 +298,6 @@ namespace BusTime
             Console.WriteLine("В автомус село: " + countLoadingPeople);
 
         }
-
-
-
-
-
 
     }
 
